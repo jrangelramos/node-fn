@@ -18,12 +18,10 @@
 const handle = async (context) => {
   context.log.info(JSON.stringify(context, null, 2));
 
-  // If the request is an HTTP POST, the context will contain the request body
   if (context.method === 'POST') {
     return {
       body: context.body,
     }
-  // If the request is an HTTP GET, the context will include a query string, if it exists
   } else if (context.method === 'GET') {
     return {
       query: context.query,
