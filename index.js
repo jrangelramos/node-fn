@@ -16,7 +16,6 @@
  * See: https://github.com/knative-sandbox/kn-plugin-func/blob/main/docs/function-developers/nodejs.md#the-context-object
  */
 const handle = async (context) => {
-  // YOUR CODE HERE
   context.log.info(JSON.stringify(context, null, 2));
 
   // If the request is an HTTP POST, the context will contain the request body
@@ -34,5 +33,4 @@ const handle = async (context) => {
   }
 }
 
-// Export the function
 module.exports = { handle };
