@@ -1,17 +1,19 @@
 specVersion: 0.25.0
 name: node-fn
-namespace: ""
+namespace: default
 runtime: node
-registry: ""
-image: ""
+registry: image-registry.openshift-image-registry.svc:5000/default
+image: image-registry.openshift-image-registry.svc:5000/default/node-fn:latest
 imageDigest: ""
 build: git
-git: 
+git:
   url: https://github.com/jrangelramos/node-fn.git
 buildpacks: []
-builder: ""
+builder: pack
 volumes: []
-buildEnvs: []
+buildEnvs:
+- name: foo
+  value: bar
 envs: []
 annotations: {}
 options: {}
