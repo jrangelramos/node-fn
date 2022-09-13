@@ -1,9 +1,7 @@
 specVersion: 0.25.0
 name: node-fn
-namespace: default
+namespace: ""
 runtime: node
-registry: image-registry.openshift-image-registry.svc:5000/default
-image: image-registry.openshift-image-registry.svc:5000/default/node-fn:latest
 imageDigest: ""
 build: git
 git:
