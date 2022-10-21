@@ -9,9 +9,7 @@ git:
 buildpacks: []
 builder: pack
 volumes: []
-buildEnvs:
-- name: foo
-  value: bar
+buildEnvs: []
 envs: []
 annotations: {}
 options: {}
